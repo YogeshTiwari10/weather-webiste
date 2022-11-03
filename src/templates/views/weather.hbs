@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{>headerlinks}}
+</head>
+
+<body>
+    <div class="container-fluid main_menu">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+
+                {{>navbar}}
+
+
+            </div>
+        </div>
+    </div>
+
+
+    {{!-- main header --}}
+
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+
+
+                <div class="main-content">
+                    <form class="temp-form">
+                        <input type="text" id="cityname" placeholder="Enter the City Name" autocomplete="off">
+                        <input type="submit" value="search" id="submitBtn">
+                    </form>
+                </div>
+
+                <div class="tempinfo">
+                    <div class="top-layer">
+                        <p id="todaydate">2 November</p>
+                        <p id="day">abc</p>
+
+                    </div>
+                    <div class="main-layer">
+                        <p id="city_name">Get Your info here</p>
+                        <div class="mid-layer data_hide">
+                            <p id="temp"><span id="tempval"></span><sup>o</sup>C</p>
+                            <p id="temp_status"><i class="fa-solid fa-cloud"></i></p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer  -->
+    {{>footer}}
+
+    <script src="/js/script.js"></script>
+    
+</body>
+
+</html>
