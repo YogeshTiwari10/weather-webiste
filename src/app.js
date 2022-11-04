@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const hbs = require('hbs');
-
+const port = process.env.PORT || 8000;
 
 // website path 
 const staticPath = (path.join(__dirname, "../public"));
@@ -34,6 +34,6 @@ app.get("*" , (req, res)=>{
     res.render('error');
 });
 
-app.listen(8000, ()=>{
+app.listen(port, ()=>{
     console.log("Listening to 8000 port");
 });
