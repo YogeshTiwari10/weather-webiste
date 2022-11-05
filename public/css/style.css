@@ -66,6 +66,7 @@ html{
 
 
 /* main header  */
+
 .main-header-left{
     height: 63.6rem;
     display: flex;
@@ -198,7 +199,9 @@ sup{
     width: 60%;
     position: relative;
     margin: 6rem auto 3rem;
+    
 }
+
 
 .temp-form input[type="text"]{
     width: 100%;
@@ -249,11 +252,23 @@ footer p{
     font-size: 1.4rem;
     
 }
-
+.container__weather{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.footer__weather{
+    display: inline-block;
+    width: 100vw;
+    position: relative;
+    top: 150px
+}
 
 /* responsive code  */
 
-@media (max-width: 768px){
+@media  screen and (max-width: 768px){
     .main-header-left{
         height: auto;
         margin: 5rem 0;
@@ -262,4 +277,77 @@ footer p{
         height: auto;
         margin-top: 3rem;
     }
+  
 }
+@media  screen and (max-width: 576px){
+  
+   .upper__weather{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+    }
+    #cityname{
+        width:175%;
+        height: 90px;
+        text-align: center;
+        position: relative;
+        right: 80px;
+    }
+    #submitBtn{
+       top:90px ;
+       right: 5px;
+       width: 110%;
+       height: 50px;
+    }
+    #submitBtn:hover{
+        color: #0097e6;
+        background-color: #fff;
+        cursor: pointer;
+    }
+    .tempinfo{
+        width: 350px;
+        position: relative;
+        top: 80px;
+        height: 300px;
+        right: 10px;
+    }
+   .container__weather{
+    flex: 1;
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+   }
+   .footer__weather{
+    position: relative;
+    top: 400px;
+   }
+}
+
+@media  screen and (max-width: 280px){
+    .tempinfo{
+        width: 110%;
+        right: 13px;
+        height: 350px;
+
+    }
+    #cityname{
+        right: 58px;
+    }
+    #submitBtn{
+        right: 1px;
+    }
+    .last__weather{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+
+}
+

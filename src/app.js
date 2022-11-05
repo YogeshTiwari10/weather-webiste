@@ -3,7 +3,10 @@ const app = express();
 const path = require('path');
 const hbs = require('hbs');
 const port = process.env.PORT || 8000;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8f4848e290855b27d3ea99db282b7e1ee7c22d82
 
 // website path 
 const staticPath = (path.join(__dirname, "../public"));

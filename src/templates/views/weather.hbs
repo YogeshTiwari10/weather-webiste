@@ -7,7 +7,8 @@
     {{>headerlinks}}
 </head>
 
-<body>
+<body >
+    <div class="container__weather">
     <div class="container-fluid main_menu">
         <div class="row">
             <div class="col-md-10 col-12 mx-auto">
@@ -24,7 +25,7 @@
 
     <div class="container-fluid main_header">
         <div class="row">
-            <div class="col-md-10 col-12 mx-auto">
+            <div class="col-md-10 col-12 mx-auto upper__weather">
 
 
                 <div class="main-content">
@@ -42,7 +43,7 @@
                     </div>
                     <div class="main-layer">
                         <p id="city_name">Get Your info here</p>
-                        <div class="mid-layer data_hide">
+                        <div class="mid-layer data_hide last__weather">
                             <p id="temp"><span id="tempval"></span><sup>o</sup>C</p>
                             <p id="temp_status"><i class="fa-solid fa-cloud"></i></p>
                         </div>
@@ -58,7 +59,10 @@
 
 
     <!-- footer  -->
+    <div class="footer__weather">
     {{>footer}}
+    </div>
+    </div>
 
     <script src="/js/script.js"></script>
     

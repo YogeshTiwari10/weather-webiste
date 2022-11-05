@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+<<<<<<< HEAD
     "start": "node src/app.js"
+=======
+    "start": "nodemon src/app.js,css,html"
+>>>>>>> 8f4848e290855b27d3ea99db282b7e1ee7c22d82
   },
   "author": "yogesh",
   "license": "ISC",
